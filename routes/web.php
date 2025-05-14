@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,5 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashb
 
 // CRUD Students
 Route::resource('students', StudentController::class);
+// CRUD Buku
+Route::resource('buku', BukuController::class);
