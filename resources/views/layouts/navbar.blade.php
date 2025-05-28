@@ -10,7 +10,8 @@
       <a class="opacity-5 text-white" href="javascript:;">Pages</a>
     </li>
     <li class="breadcrumb-item text-sm text-white active" aria-current="page">
-      {{ $pageTitle ?? (request()->routeIs('students.*') ? 'Students' : 'Dashboard') }}
+      {{ $pageTitle ?? request()->routeIs('students.*') ? 'Students' :
+          (request()->routeIs('buku.*') ? 'Buku' : 'Dashboard') }}
     </li>
   </ol>
 </nav>

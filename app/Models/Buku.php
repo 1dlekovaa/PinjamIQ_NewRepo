@@ -18,4 +18,9 @@ class Buku extends Model
         'kategori',
         'stok',
     ];
+
+    public function loans()
+{
+    return $this->hasMany(Loan::class);
+}
 }

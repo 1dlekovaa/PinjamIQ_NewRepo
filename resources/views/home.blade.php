@@ -15,15 +15,9 @@
                   <div class="col-8">
                     <div class="numbers">
                       <p class="text-sm mb-0 text-uppercase font-weight-bold">
-                        Today's Money
+                        Total buku
                       </p>
-                      <h5 class="font-weight-bolder">$53,000</h5>
-                      <p class="mb-0">
-                        <span class="text-success text-sm font-weight-bolder"
-                          >+55%</span
-                        >
-                        since yesterday
-                      </p>
+                      <h5 class="font-weight-bolder"></h5>
                     </div>
                   </div>
                   <div class="col-4 text-end">
@@ -47,15 +41,10 @@
                   <div class="col-8">
                     <div class="numbers">
                       <p class="text-sm mb-0 text-uppercase font-weight-bold">
-                        Today's Users
+                        Buku Yang Di Pinjam
                       </p>
-                      <h5 class="font-weight-bolder">2,300</h5>
-                      <p class="mb-0">
-                        <span class="text-success text-sm font-weight-bolder"
-                          >+3%</span
-                        >
-                        since last week
-                      </p>
+                      <h5 class="font-weight-bolder"></h5>
+
                     </div>
                   </div>
                   <div class="col-4 text-end">
@@ -79,15 +68,10 @@
                   <div class="col-8">
                     <div class="numbers">
                       <p class="text-sm mb-0 text-uppercase font-weight-bold">
-                        New Clients
+                            Buku Yang Di Kembalikan
                       </p>
-                      <h5 class="font-weight-bolder">+3,462</h5>
-                      <p class="mb-0">
-                        <span class="text-danger text-sm font-weight-bolder"
-                          >-2%</span
-                        >
-                        since last quarter
-                      </p>
+                      <h5 class="font-weight-bolder"></h5>
+
                     </div>
                   </div>
                   <div class="col-4 text-end">
@@ -111,15 +95,10 @@
                   <div class="col-8">
                     <div class="numbers">
                       <p class="text-sm mb-0 text-uppercase font-weight-bold">
-                        Sales
+                        Total Peminjam
                       </p>
-                      <h5 class="font-weight-bolder">$103,430</h5>
-                      <p class="mb-0">
-                        <span class="text-success text-sm font-weight-bolder"
-                          >+5%</span
-                        >
-                        than last month
-                      </p>
+                      <h5 class="font-weight-bolder"></h5>
+
                     </div>
                   </div>
                   <div class="col-4 text-end">
@@ -150,12 +129,12 @@
                   </script>
                   , made with <i class="fa fa-heart"></i> by
                   <a
-                    href="https://www.creative-tim.com"
+                    href="#"
                     class="font-weight-bold"
                     target="_blank"
-                    >Creative Tim</a
+                    >PinjamIQ</a
                   >
-                  for a better web.
+                  for a better web. 
                 </div>
               </div>
               <div class="col-lg-6">

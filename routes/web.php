@@ -37,3 +37,4 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashb
 Route::resource('students', StudentController::class);
 // CRUD Buku
 Route::resource('buku', BukuController::class);
+Route::resource('loans', LoanController::class);

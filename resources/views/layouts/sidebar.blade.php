@@ -40,32 +40,27 @@
     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
       <i class="ni ni-calendar-grid-58 text-dark text-sm opacity-10"></i>
     </div>
-    <span class="nav-link-text ms-1">Students</span>
+    <span class="nav-link-text ms-1">Murid</span>
   </a>
 </li>
 
 <li class="nav-item">
   <a class="nav-link {{ request()->routeIs('buku.*') ? 'active' : '' }}" href="{{ route('buku.index') }}">
     <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-      <i class="ni ni-calendar-grid-58 text-dark text-sm opacity-10"></i>
+      <i class="ni ni-bullet-list-67 text-dark text-sm opacity-10"></i>
     </div>
-    <span class="nav-link-text ms-1">buku</span>
+    <span class="nav-link-text ms-1">Buku</span>
   </a>
 </li>
+<li class="nav-item">
+  <a class="nav-link {{ request()->routeIs('loans.*') ? 'active' : '' }}" href="{{ route('loans.index') }}">
+    <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+      <i class="ni ni-books text-dark text-sm opacity-10"></i>
+    </div>
+    <span class="nav-link-text ms-1">Peminjaman</span>
+  </a>
+</li>
+
     </ul>
-  </div>
-  <div class="sidenav-footer mx-3">
-    <a
-      href="https://www.creative-tim.com/learning-lab/bootstrap/license/argon-dashboard"
-      target="_blank"
-      class="btn btn-dark btn-sm w-100 mb-3"
-      >Documentation</a
-    >
-    <a
-      class="btn btn-primary btn-sm mb-0 w-100"
-      href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=sidebarfree"
-      type="button"
-      >Upgrade to pro</a
-    >
   </div>
 </aside>
