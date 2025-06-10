@@ -8,24 +8,34 @@ use Illuminate\Database\Eloquent\Model;
 class Loan extends Model
 {
     use HasFactory;
+
     protected $fillable = [
-        'user_id',
-        'book_id',
-        'borrow_date',
-        'return_date',
+        'student_id',   // siswa peminjam
+        'buku_id',
+        'borrowed_at',
+        'due_at',
         'status',
+        'user_id',      // petugas yang mencatat
     ];
 
-    // Relasi ke User (satu peminjam = satu user)
+    protected $casts = [
+        'borrowed_at' => 'datetime',
+        'due_at'      => 'datetime',
+        // tambahkan jika ada kolom tanggal lain, misal 'returned_at' => 'datetime',
+    ];
+
+    public function student()
+    {
+        return $this->belongsTo(Student::class);
+    }
+
+    public function buku()
+    {
+        return $this->belongsTo(Buku::class);
+    }
+
     public function user()
     {
-        return $this->belongsTo(User::class);
-    }
-
-    // Relasi ke Book (satu peminjaman = satu buku)
-    public function book()
-    {
-        return $this->belongsTo(Book::class);
+        return $this->belongsTo(User::class); // petugas yang mencatat peminjaman
     }
 }
-

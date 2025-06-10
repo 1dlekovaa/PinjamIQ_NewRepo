@@ -13,11 +13,24 @@ return new class extends Migration
     {
         Schema::create('loans', function (Blueprint $table) {
             $table->id();
+
+            // Relasi ke siswa
             $table->foreignId('student_id')->constrained()->onDelete('cascade');
-            $table->foreignId('book_id')->constrained()->onDelete('cascade');
-            $table->date('borrowed_at');
-            $table->date('due_at');
-            $table->date('returned_at')->nullable();
+
+            // Relasi ke buku
+            $table->foreignId('buku_id')->constrained('bukus')->onDelete('cascade');
+
+            // Relasi ke user (petugas)
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+
+            // Informasi tanggal peminjaman
+            $table->date('borrowed_at');         // Tanggal pinjam
+            $table->date('due_at');              // Tanggal jatuh tempo
+            $table->date('returned_at')->nullable(); // Tanggal kembali (jika sudah)
+
+            // Status peminjaman (default: Belum Dikembalikan)
+            $table->enum('status', ['Belum Dikembalikan', 'Sudah Dikembalikan'])->default('Belum Dikembalikan');
+
             $table->timestamps();
         });
     }
